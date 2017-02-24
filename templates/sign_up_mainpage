@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+  <html>
+      <head><title>Main User Verification Page</title></head>
+  <body>
+  <h2>Sign-up</h2>
+      <form method="post">
+      <table>
+      <tbody>
+          <tr>
+              <td class="label">Username</td>
+              <td><input name="username" value="{{username}}" type="text"></td>
+              <td class="error"> {{UNerror}} </td>
+          </tr>
+          <tr>
+              <td class="label">Passvvord</td>
+              <td><input name="password" type="password" value=""></td>
+              <td class="error"> {{PWerror}} </td>
+          </tr>
+          <tr>
+              <td class="label">Verify Passvvord</td>
+              <td><input name="verify" type="password" value=""></td>
+              <td class="error">  {{PWdontmatcherror}} </td>
+          </tr>
+          <tr>
+              <td class="label">Email (optional)</td>
+              <td><input name="optional email" value="{{email}}" type="text"></td>
+              <td class="error"> {{EMAILerror}} </td>
+          <tr>
+      </tbody>
+      </table>
+      <br>
+
+      <input type="submit">
+      </form>
+  </body>
+  </html>
